@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    display: grid;
+    align-items: start;
+    justify-content: start;
+}
+
+canvas {
+    display: block;
+    border: 1px solid lightgray;
+    background-image:
+        linear-gradient(to right, lightgray 1px, transparent 1px),
+        linear-gradient(to bottom, lightgray 1px, transparent 1px);    
+}
+
+#app_pixigrid {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#app_pixigrid_focus {
+    font-family: monospace;
+    position: fixed;
+    z-index: 2;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+
+#app_pixigrid_focus:focus {
+    background-color: gray;
+}
